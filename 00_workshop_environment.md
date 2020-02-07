@@ -4,7 +4,7 @@ Every participant has a sandbox that's been set up to look like the goal of our 
 
 Your two servers and two repositories are named with your participant number tacked on the end.  We'll just say X in the examples below.
 
-* **masterX**: Your own EL 7 server with a monolithic Puppet Enterprise 2019.3 master already installed on it, and code manager configured.  (But no webhook to trigger it.  We'll let CD4PE trigger it.)
+* **masterX**: Your own EL 7 server with a monolithic Puppet Enterprise 2019.2 master already installed on it, and code manager configured.  (But no webhook to trigger it.  We'll let CD4PE trigger it.)
 
 * **cd4peX**: Your own EL 7 server with the Puppet agent installed and checking in to the master.  This is where we'll install CD4PE and it will also double as job hardware.
 
