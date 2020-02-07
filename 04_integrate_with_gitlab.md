@@ -18,7 +18,7 @@ First we'll need to generate a token in the GitLab instance for the cd4pe user. 
 Next we'll use the token to integrate CD4PE with source control.
 
 1. In the CD4PE GUI, click the "Integrate Source Control" button at the top of the window,
-  1. (Or if you've dismissed that, click "Settings" then "Source Control")
+    1. (Or if you've dismissed that, click "Settings" then "Source Control")
 1. Click "GitLab",
 1. Set the "Host" to http://**<gitlab.puppetlabs.vm>** (Note: http not https),
 1. Paste the access token that you just generated from GitLab,

@@ -7,9 +7,9 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
 ## Do this
 
 1. In CD4PE, make sure you're logged in as your non-root user,
-  1. (The lower left corner says who you're logged in as, and lets you log out.)
+    1. (The lower left corner says who you're logged in as, and lets you log out.)
 1. There's a big set of buttons up top, click "Integrate Puppet Enterprise,"
-  1. (If you've dismissed that already, click "Settings" on the left, then "Puppet Enterprise".)
+    1. (If you've dismissed that already, click "Settings" on the left, then "Puppet Enterprise".)
 1. Click to "Add Credentials"
 1. Supply a name, for instance "main-instance"
 1. For the console address, supply the FQDN of your Puppet **Master**
@@ -19,8 +19,8 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
 1. A token lifetime of 6 months is fine for the workshop, though customers may prefer way longer
 1. Click "save changes"
 1. CD4PE will now use the credentials.
-  1. (And on our short-term support master, it also configures Impact Analysis.)
-  1. (On the LTS you would use the cd4pe::impact_analysis class.)
+    1. (And on our short-term support master, it also configures Impact Analysis.)
+    1. (On the LTS you would use the cd4pe::impact_analysis class.)
 
 ## Discussion questions
 

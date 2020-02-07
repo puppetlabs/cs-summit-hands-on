@@ -5,7 +5,7 @@ In order to run tests, CD4PE needs to have a pool of "job hardware" with the cap
 Since the CD4PE host already has docker on it -- running the CD4PE container -- it's simplest to re-use that hardware as job hardware.  To add it, you will run a `curl` one-liner to fetch the Distelli agent -- that's the company we acquired that provided the start of CD4PE -- then you'll install it, and finally instruct CD4PE about which capabilities the hardware has.  You'll then mark the hardware as "active" so that CD4PE knows it's in the pool and available to run jobs that require its capabilities.
 
 1. Click the big "Set up job hardware" button in the top of the page,
-  1. (Or if you've dismissed it, click "Settings" and then "Job Hardware",
+    1. (Or if you've dismissed it, click "Settings" and then "Job Hardware",
 1. Click "Add job hardware"
 1. Copy the `curl` one-liner to your clipboard,
 1. SSH into your CD4PE host as "root" with the password "puppetlabs" and run the `curl` one-liner,
@@ -20,7 +20,7 @@ The job hardware is now available in your workspace, but CD4PE doesn't yet know 
 1. Your job hardware should appear in the list, pre-set with the Linux capability,
 1. Click to "+ Add Capability",
 1. Type in "docker" and click Save,
-  1. If you like, it would also be appropriate to add "puppet-agent" but we won't need it,
+    1. If you like, it would also be appropriate to add "puppet-agent" but we won't need it,
 1. Click the slider to set the "Job Hardware Active"
 
 ## Discussion questions

@@ -14,7 +14,7 @@ A regex pipeline automates the part of the flow where you create a feature branc
 1. Your new pipeline is no displayed on the right side of the page.
 1. Similar to the master pipeline, click to "+ Add default pipeline"
 1. Find the pull request gate, and click the "X" to delete it.
-  1. In this workflow, you will never make a PR into a feature branch.
+    1. In this workflow, you will never make a PR into a feature branch.
 1. Leave auto-promote selected
 1. Now, click "Add a deployment"
 1. Select the "Feature branch policy" and then "Add deployment to stage"
@@ -24,15 +24,15 @@ Let's try it out.  Pushing a branch named "feature_.*" should trigger the pipeli
 
 1. Switch to your SSH connection to the CD4PE node and make sure you're in the control repository directory.
 1. Make a feature branch, make an empty commit, and push it up.
-  1. `git checkout -b feature_try_it`
-  1. `git commit -m 'Empty commit to try feature branches' --allow-empty`
-  1. `git push origin feature_try_it`
+    1. `git checkout -b feature_try_it`
+    1. `git commit -m 'Empty commit to try feature branches' --allow-empty`
+    1. `git push origin feature_try_it`
 1. Switch back into the CD4PE GUI and click "New Events" to watch the pipeline run.
-  1. It will do code validation
-  1. When all tests pass, it will deploy the feature branch
-  1. Wait for it to finish
+    1. It will do code validation
+    1. When all tests pass, it will deploy the feature branch
+    1. Wait for it to finish
 1. Switch to your SSH connection to the CD4PE node and try the feature environment.
-  1. `puppet agent --test --environment feature_try_it`
+    1. `puppet agent --test --environment feature_try_it`
 
 ## Discussion questions
 
