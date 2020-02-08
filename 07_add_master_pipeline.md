@@ -12,6 +12,9 @@ First let's create the pipeline.
 
 1. Log in to the CD4PE GUI
 1. If you're not already there, click "Control Repos" on the left-hand side, then click your control repository.
+1. Click "Manage pipelines"
+1. Put a checkmark by the "PullRequest" trigger
+1. Click "Save Settings" and then "Done"
 1. Click "+ Add default pipeline"
 1. Development deployment
     1. Click to "Add a deployment"
