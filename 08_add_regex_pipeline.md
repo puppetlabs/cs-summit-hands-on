@@ -11,7 +11,7 @@ A regex pipeline automates the part of the flow where you create a feature branc
 1. Click the radio button to switch to "Branch regex" (it opens with "Single branch" instead)
 1. Leave the default regex as "feature_.*" so the pipeline will trigger any time we push a branch with a name that matches.
 1. Click "Add pipeline", then click "Done" to dismiss the dialog.
-1. Your new pipeline is no displayed on the right side of the page.
+1. Your new pipeline is now displayed on the right side of the page.
 1. Similar to the master pipeline, click to "+ Add default pipeline"
 1. Find the pull request gate, and click the "X" to delete it.
     1. In this workflow, you will never make a PR into a feature branch.
