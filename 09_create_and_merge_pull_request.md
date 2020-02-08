@@ -16,10 +16,10 @@ As you created the merge request, the webhook notified CD4PE of it.  Watch as th
 
 1. Switch to the CD4PE GUI
 1. In the control repo page, click to see "New events"
-1. Note that there are only four validation jobs, and a queued Impact Analysis
+1. Note that there are only four validation jobs, and a queued Impact Analysis, but no deployments
 1. Let the pipeline continue, and watch it stop right when it hits the pull request gate.
 
-Now we're ready to merge.  Since this a merge (which counts as a push) the PR Gate will *not* stop the pipeline from continuing past it.
+Now we're ready to merge.  Since a merge is just a commit the PR Gate will *not* stop the pipeline from continuing past it.
 
 1. Switch back to the GitLab interface
 1. Verify that GitLab reflects success of the validation stage right in the merge request
