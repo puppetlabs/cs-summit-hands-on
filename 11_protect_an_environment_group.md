@@ -4,7 +4,7 @@ You can mark environments as protected in CD4PE, and specify groups of users who
 
 First, make a group of approvers, and add yourself to it.
 
-1. On the left-hand, click "Settings"
+1. In the CD4PE GUI, on the left-hand side, click "Settings"
 1. Click "Groups"
 1. Click "+ Create Group"
 1. Name the group something like "production-approvers"
@@ -14,7 +14,7 @@ First, make a group of approvers, and add yourself to it.
 1. In the column for "Protected Environments" click on the number "0"
 1. Click "Add"
 1. Choose "production"
-1. Flip the slider to enable your new group to approve code deployments
+1. Under "Designate approval groups," flip the slider to enable your new group to approve code deployments
 1. Click "Add" then "Done"
 1. Click "Done" again
 
@@ -29,10 +29,9 @@ Let's trigger the pipeline with a push to master, and walk through the whole pro
 1. Switch back to your SSH connection to the CD4PE node
 1. Change directories back into your `~/control-repo` directory
 1. Make sure you're on the master branch, make a commit, and push it up
-1. `git checkout master`
-1. `git pull origin master`
-1. `git commit -m 'Empty to try protecting environments' --allow-empty`
-1. `git push origin master`
+    1. `git checkout master`
+    1. `git commit -m 'Empty to try protecting environments' --allow-empty`
+    1. `git push origin master`
 
 This should trigger the pipeline, you can usher it through the whole pipeline now.
 
