@@ -8,18 +8,19 @@ If you keep your modules in their own individual repositories, you can have CD4P
 1. In the left-hand navigation, select "Modules"
 1. Over on the right, click "Add Module"
 1. Choose GitLab as he source
-1. Choose the CD4PE organization
+1. Choose the "Continuous Delivery" organization
 1. Select your numbered "puppet-mymodule-**NN**" repository
 1. Click "Add"
 1. It should detect the .cd4pe.yaml file, click "Yes, manage as code"
+1. Click "Done" to dismiss the dialog
 
 Now let's make sure the Pipelines are working as advertised.  In the interest of time, we'll just push a commit to the master branch.  (If you have extra time, try the full workflow of creating a feature branch, pushing it, running an agent against it, creating a pull request, and then merging it.)
 
 1. Switch to your SSH connection on the CD4PE node
 1. Change directories into your `~/puppet-mymodule` directory
 1. Make an empty commit to master and push it
-1. `git commit -m 'Empty for direct push to master' --allow-empty`
-1. `git push origin master`
+    1. `git commit -m 'Empty for direct push to master' --allow-empty`
+    1. `git push origin master`
 1. Switch back to the CD4PE GUI
 1. Click "New events" and watch the pipeline run through the Development deployment
 1. Click the "Promote" button, to deploy to Staging and watch it go
