@@ -9,7 +9,7 @@ If you keep your modules in their own individual repositories, you can have CD4P
 1. Over on the right, click "Add Module"
 1. Choose GitLab as he source
 1. Choose the "Continuous Delivery" organization
-1. Select your numbered "puppet-mymodule-**NN**" repository
+1. Select your numbered "puppet-mymodule-Y" repository
 1. Click "Add"
 1. It should detect the .cd4pe.yaml file, click "Yes, manage as code"
 1. Click "Done" to dismiss the dialog

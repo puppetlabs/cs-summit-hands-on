@@ -16,10 +16,12 @@ First let's create the pipeline.
 1. Put a checkmark by the "PullRequest" trigger
 1. Click "Save Settings" and then "Done"
 1. Click "+ Add default pipeline"
+1. Between the validation and impact analysis change, click the "All Succeeded" menu and change it to "All Completed"
 1. Development deployment
     1. Click to "Add a deployment"
     1. In "Select a node group," pick "Development environment"
     1. In "Select a deployment policy," pick "Eventual consistency policy"
+    1. Leave the timeout at sixty seconds
     1. Click to "Add deployment to stage"
     1. Click "Done" to dismiss the dialog
     1. Check the "auto promote" checkbox between the Pull Request Gate and the Deployment stage
@@ -40,9 +42,11 @@ First let's create the pipeline.
 
 Next let's make sure it works when we push something to the master branch.
 
-1. Switch to your SSH connection on the CD4PE node
+1. Switch to your SSH connection to your summitXcd4peY.classroom.puppet.com node
 1. Change directories into your control repository (we cloned it for you)
     * `cd control-repo`
+1. Make extra sure you're up to date with what's in GitLab
+    * `git pull origin master`
 1. Make a fake, empty commit
     * `git commit -m 'Empty commit for master pipeline' --allow-empty`
 1. Push it up, triggering the webhook, and kicking off the pipeline

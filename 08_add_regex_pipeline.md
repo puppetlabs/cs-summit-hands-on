@@ -17,8 +17,9 @@ A regex pipeline automates the part of the flow where you create a feature branc
     1. In this workflow, you will never make a PR into a feature branch.
 1. Leave auto-promote selected
 1. Now, click "Add a deployment"
-1. Select the "Feature branch policy" and then "Add deployment to stage"
+1. Select the "Feature branch policy" and then "Add Deployment to Stage"
 1. Click "Done" to dismiss the dialog.
+1. Between the validation and deployment stage, click the "All Succeeded" menu and change it to "All Completed"
 
 Let's try it out.  Pushing a branch named "feature_.*" should trigger the pipeline.
 
@@ -32,7 +33,7 @@ Let's try it out.  Pushing a branch named "feature_.*" should trigger the pipeli
     1. When all tests pass, it will deploy the feature branch
     1. Wait for it to finish
 1. Switch to your SSH connection to the CD4PE node and try the feature environment.
-    1. `puppet agent --test --environment feature_try_it`
+    1. `sudo /opt/puppetlabs/bin/puppet agent --test --environment feature_try_it`
 
 ## Discussion questions
 

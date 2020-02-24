@@ -22,7 +22,7 @@ Now, we'll kick off the master pipeline and watch it wait for an approval.  Ther
 
 1. On the left, click "Control repos" and select your control repository
 1. In the "Pipelines" area on the right, use the drop-down to ensure you are looking at the master pipeline
-1. Add a checkmark to "Auto promote" between the staging and production stages.
+1. Add checkmarks to enable "Auto promote" between the staging and production stages.
 
 Let's trigger the pipeline with a push to master, and walk through the whole process.  (If you have extra time, make a feature branch, pull request, and merge it.)
 
@@ -41,6 +41,7 @@ This should trigger the pipeline, you can usher it through the whole pipeline no
 1. Wait for it to complete its impact analysis
 1. Watch it auto promote to Development when those items finish successfully
 1. Click "Promote" to move it along to the Staging stage
+1. Let that job finish, and it will auto-promote to the production stage
 1. It will report the production branch is "Deployment Running"
 1. Click the job number right under the "Deployment Running" text
 1. Under "Deployment events" the "Approval task" needs you to click "Approve"

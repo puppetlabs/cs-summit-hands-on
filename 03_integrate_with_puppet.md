@@ -2,7 +2,7 @@
 
 CD4PE should use a service account when connecting to Puppet Enterprise.  The account needs to be able to deploy code, make node groups, assign nodes to them, and run Puppet when a direct deployment policy is involved.
 
-In the interest of time, we've pre-created a "cd4pe" user with password "puppetlabs" in your console with the correct permissions.  You can inspect them, if you're curious.  Here's how to integrate CD4PE with Puppet Enterprise.
+In the interest of time, we've pre-created a "cd4pe" user with password "puppetlabs" in your PE console with the correct permissions.  You can inspect them, if you're curious.  Here's how to integrate CD4PE with Puppet Enterprise.
 
 ## Do this
 
@@ -12,7 +12,7 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
     1. (If you've dismissed that already, click "Settings" on the left, then "Puppet Enterprise".)
 1. Click to "Add Credentials"
 1. Supply a name, for instance "main-instance"
-1. For the console address, supply the FQDN of your Puppet **Master**
+1. For the console address, simply supply "puppet.classroom.puppet.com"
 1. Leave the radio box set to "Basic Authorization"
 1. Supply the username we already created for you, "cd4pe"
 1. Supply the password we already set for the user, "puppetlabs"
@@ -20,7 +20,7 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
 1. Click "save changes"
 1. CD4PE will now use the credentials.
     1. (And on our short-term support master, it also configures Impact Analysis.)
-    1. (On the LTS you would use the cd4pe::impact_analysis class.)
+    1. (On the 2018.1 LTS you would use the cd4pe::impact_analysis class.)
 
 ## Discussion questions
 

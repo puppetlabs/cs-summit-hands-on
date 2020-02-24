@@ -8,10 +8,13 @@ Since the CD4PE host already has docker on it -- running the CD4PE container -- 
     1. (Or if you've dismissed it, click "Settings" and then "Job Hardware",
 1. Click "Add job hardware"
 1. Copy the `curl` one-liner to your clipboard,
-1. SSH into your CD4PE host as "root" with the password "puppetlabs" and run the `curl` one-liner,
-1. Switch back to the CD4PE GUI and copy the `distelli` one-liner,
-1. Switch back to your SSH session and paste it,
-1. Supply your non-root user's email and password when prompted,
+1. SSH into your CD4PE host as centos, using the `training.pem` file as a key
+    1. (ssh -i training.pem -l centos summitXcd4peY.classroom.puppet.com)
+1. Paste the `curl` one-liner,
+1. Copy the `distelli` command from STDOUT and paste it on the command line,
+    1. (sudo /usr/local/bin/distelli agent install)
+1. Supply your **non-root** user's email and password when prompted,
+    1. (e.g. kermit@classroom.puppet.com)
 
 The job hardware is now available in your workspace, but CD4PE doesn't yet know about its Docker capabilities, nor does it know that it's "active" and ready to handle jobs.
 

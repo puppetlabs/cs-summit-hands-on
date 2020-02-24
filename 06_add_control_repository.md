@@ -6,12 +6,15 @@ Unlike with Code Manager, you don't have to add a webhook manually.  CD4PE is go
 
 ## Do this
 
+First, we'll tell CD4PE where the gitlab repository is.
+
 1. Click the big "Add control repository" button near the top of the page,
     1. (Or if you've dismissed it, click "Control Repos" in the left-hand navigation)
 1. In the ensuing page, click the text-only "Add Control Repo" button,
-1. Select GitLab from the list,
+1. Select GitLab, in the list,
 1. Choose the "Continuous Delivery" organization,
-1. Choose the control repository named for your participant number,
+1. Choose the control-repo-X named for your participant number,
+    1. (Note: there is a search box at the top of the list.)
 1. Leave "branch" set to "master"
 1. Optional: give your repo a fancier name to be used in the GUI
 1. Click "Add"
