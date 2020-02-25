@@ -78,3 +78,7 @@ Next let's make sure it works when we push something to the master branch.
 
 * On the CD4PE host, if you tail `/var/log/messages`, you can watch what it's doing on a lower level than the GUI.
 * On the master, you can tail `/var/log/puppetlabs/puppetserver/puppetserver.log` to watch the Code Manager's side of the conversation.
+
+---
+
+[Previous - 06 Add Control Repository](06_add_control_repository.md) | [Next - 08 Add Regex Pipeline](08_add_regex_pipeline.md)

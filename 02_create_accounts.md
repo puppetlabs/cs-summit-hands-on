@@ -33,3 +33,7 @@ Okay, we're halfway there.  When you're ready, proceed to create a normal user a
 
 * Why is there a separate root user and individual users?
 * Why might I want to use multiple workspaces?
+
+---
+
+[Previous - 01 Installing CD4PE](01_installing_cd4pe.md) | [Next - 03 Integrate with Puppet](03_integrate_with_puppet.md	)

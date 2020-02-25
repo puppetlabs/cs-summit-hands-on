@@ -33,3 +33,7 @@ Now we're ready to merge.  Since a merge is just a commit the Pull Request Gate 
 ## Discussion questions
 
 * Why did the pipeline stop after Impact Analysis for the Pull Request, but not the merge?
+
+---
+
+[Previous - 08 Add Regex Pipeline](08_add_regex_pipeline.md) | [Next - 10 Add a Module](10_add_a_module.md)

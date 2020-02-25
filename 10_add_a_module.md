@@ -29,3 +29,7 @@ Now let's make sure the Pipelines are working as advertised.  In the interest of
 ## Discussion questions
 
 * Suppose several teams have to cooperate on a single "profile" module, but they have to promote their changes at different velocities.  How might breaking out profiles into team-specific modules make this manageable?
+
+---
+
+[Previous - 09 Create and Merge Pull Request](09_create_and_merge_pull_request.md) | [Next - 11 Protect an Environment Group](11_protect_an_environment_group.md)

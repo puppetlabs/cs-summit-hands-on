@@ -30,3 +30,7 @@ The job hardware is now available in your workspace, but CD4PE doesn't yet know 
 
 * Why might you need Job hardware with the Windows capability?
 * What advantages/risks might be associated with re-using the CD4PE host as job hardware?
+
+---
+
+[Previous - 04 Integrate with Gitlab](04_integrate_with_gitlab.md) | [Next - 06 Add Control Repository](06_add_control_repository.md)

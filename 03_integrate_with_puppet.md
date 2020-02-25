@@ -26,3 +26,7 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
 
 * Why bother with a cd4pe service account in the console, instead of just using admin or some user?
 * What kind of permissions do you think the service account needs?
+
+---
+
+[Previous - 02 Create Accounts](02_create_accounts.md) | [Next - 04 Integrate with Gitlab](04_integrate_with_gitlab.md)

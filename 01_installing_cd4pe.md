@@ -30,3 +30,7 @@ Your control repository already has this module and its dependencies in its Pupp
 
 * Why use a module instead of the simple Bolt task?
 * How can I get a newer minor version of CD4PE when they release it?
+
+---
+
+[Previous - 00 Workshop Environment](00_workshop_environment.md) |  [Next - 02 Create Accounts](02_create_accounts.md)

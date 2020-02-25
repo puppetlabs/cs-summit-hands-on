@@ -23,3 +23,6 @@ First, we'll tell CD4PE where the gitlab repository is.
 ## Discussion questions
 
 * Why might you want to integrate with more than one control repository?
+
+---
+[Previous - 05 Add Job Hardware](05_add_job_hardware.md) | [Next - 07 Add Master Pipeline](07_add_master_pipeline.md)
