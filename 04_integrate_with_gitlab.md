@@ -30,3 +30,6 @@ Next we'll use the token to integrate CD4PE with source control.
 ## Discussion questions
 
 * Why does the CD4PE user create an SSH key for itself in GitLab, if Code Manager is doing the deploys?
+
+---
+[Previous - 03 Integrate with Pupet](03_integrate_with_puppet.md) | [Next - 05 Add Job Hardware](05_add_job_hardware.md)

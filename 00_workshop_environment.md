@@ -13,3 +13,7 @@ Your two servers and two repositories are named with your participant number tac
 
 * **puppet-mymodule-X**: Your own module repository in a shared GitLab instance.
   * (Originally cloned from https://github.com/puppetlabs/cs-summit-cd-mymodule)
+
+---
+
+[Next - 01 Installing CD4PE](01_installing_cd4pe.md)

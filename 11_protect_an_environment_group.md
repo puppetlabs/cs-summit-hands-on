@@ -52,3 +52,7 @@ This should trigger the pipeline, you can usher it through the whole pipeline no
 
 * What sort of conversations will you have with customers who are used to protecting branches, as they switch to protecting environments in CD4PE?
 * What if some malicious person just pushes code to the production branch, "bypassing" CD4PE's approval?
+
+---
+
+[Previous - 10 Add a Module](10_add_a_module.md) | [Next - Extra Credit](aa_extra_credit.md)

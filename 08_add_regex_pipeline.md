@@ -39,3 +39,7 @@ Let's try it out.  Pushing a branch named "feature_.*" should trigger the pipeli
 
 * Why require that feature branches have names matching a regexp?  (feature_.*)
 * Can you think of situations where a customer might prefer a different regexp?
+
+---
+
+[Previous - 07 Add Master Pipeline](07_add_master_pipeline.md) | [Next - 09 Create and Merge Pull Request](09_create_and_merge_pull_request.md)
