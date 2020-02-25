@@ -112,3 +112,6 @@ Edit **EACH** job in the CD4PE GUI to add the following *Docker Run Arguments*:
 **NOTE:** Don't copy and paste this into your lab. Use the output from the above commands to get the correct hosts for your lab environment.
 
 ![alt-text](assets/docker_arguments.png)
+---
+
+[Previous - 06 Add Control Repository](06_add_control_repository.md) | [Next - 08 Add Regex Pipeline](08_add_regex_pipeline.md)
