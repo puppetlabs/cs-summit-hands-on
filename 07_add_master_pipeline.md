@@ -78,3 +78,37 @@ Next let's make sure it works when we push something to the master branch.
 
 * On the CD4PE host, if you tail `/var/log/messages`, you can watch what it's doing on a lower level than the GUI.
 * On the master, you can tail `/var/log/puppetlabs/puppetserver/puppetserver.log` to watch the Code Manager's side of the conversation.
+
+## Troubleshooting
+If DNS is not setup in your lab environment, at this point your jobs may be failing with an error similar to:
+
+```shell
+2020-02-24T22:48:05Z started 'distelli' with pid 27187
+Identity added: (stdin) ((stdin))
+Cloning into '/distelli/tasks/d3-8/repo'...
+HEAD is now at 33e4874 Empty commit for master pipeline
+latest: Pulling from puppet/puppet-dev-tools
+Digest: sha256:ac843616bf600b648e873543c6a6609dcc109559ed33ca5f858beac69ea8c52f
+Status: Image is up to date for puppet/puppet-dev-tools:latest
+docker.io/puppet/puppet-dev-tools:latest
+Installing gosu (https://github.com/tianon/gosu/releases/download/1.9/gosu-amd64)
+curl: (6) Could not resolve host: cd4pe2.classroom.puppet.com; Unknown error
+Failed to install 'distelli' command from 'http://cd4pe2.classroom.puppet.com:8080/download/client'
+Failed to initialize specified -vm (5 minutes)
+```
+
+The containers running our jobs need to be able to resolve:
+* The Gitlab instance (summitYgitlab0.classroom.puppet.com)
+* The CD4PE instance (cd4peX.classroom.puppet.com)
+
+To get this information, from your CD4PE instance run the following commands:
+* `grep 'add-host cd4pe' /usr/local/bin/docker-run-cd4pe-start.sh | tr -d '\\'`
+* `ping -c 1 summitYgitlab0.classroom.puppet.com`
+
+Edit **EACH** job in the CD4PE GUI to add the following *Docker Run Arguments*:
+
+`--add-host=cd4pe2.classroom.puppet.com:10.120.0.157 --add-host=summit1gitlab0.classroom.puppet.com:10.120.0.138`
+
+**NOTE:** Don't copy and paste this into your lab. Use the output from the above commands to get the correct hosts for your lab environment.
+
+![alt-text](assets/docker_arguments.png)
