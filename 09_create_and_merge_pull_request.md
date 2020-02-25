@@ -7,7 +7,7 @@ Finally, we're ready to complete the development cycle by creating a pull reques
 1. Most likely near the top of the project's main page shows your feature branch with a convenient "Create merge request" button.
     1. (If not, in the left-hand pane click "Merge Requests" then "New merge request")
         1. Set the source branch to your feature branch
-        1. Confirm the target is "master" (Don't follow your reflex and choose "production")
+        1. Confirm the target is "master"
         1. Select "compare branches and continue"
 1. On the ensuing page, click to "Submit merge request"
 1. **Don't merge yet.**

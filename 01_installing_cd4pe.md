@@ -12,7 +12,7 @@ Your control repository already has this module and its dependencies in its Pupp
 
 ## Do this
 
-1. Log in to your Enterprise Console (https://summitXmasterY.classroom.puppet.com) as "admin" with password "puppetlabs",
+1. Log in to your Enterprise Console (https://summitX-masterY.classroom.puppet.com) as "admin" with password "puppetlabs",
 1. Pop into "Classification" and create a "PE Continuous Delivery" node group with a parent of "PE Infrastructure" and the rest defaults,
 1. Click to add membership rules, and pin your CD4PE host (cd4peY.classroom.puppet.com) to the group (Note, it lacks the "summitX" part)
 1. Switch to the "Configuration" tab and add the `cd4pe` class to your node.
@@ -23,7 +23,7 @@ Your control repository already has this module and its dependencies in its Pupp
         1. (sudo /opt/puppetlabs/bin/puppet agent --test)
     1. Watch it install docker and pe-postgresql.
     1. Tail `/var/log/messages` after the run to see docker pull down the CD4PE docker image and start it up, and
-1. After a minute or two, browse to http://**summitXcd4peY.classroom.puppet.com**:8080/ once the docker container is finally up.  (Note: http and port 8080)
+1. After a minute or two, browse to http://**summitX-cd4peY.classroom.puppet.com**:8080/ once the docker container is finally up.  (Note: http and port 8080)
 1. **Stop here** -- we'll do the initial setup next.
 
 ## Discussion questions

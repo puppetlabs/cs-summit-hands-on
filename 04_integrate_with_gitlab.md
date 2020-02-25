@@ -6,7 +6,7 @@ CD4PE should use a service account when integrating with your source control ser
 
 First we'll need to generate a token in the GitLab instance for the cd4pe user.  It doesn't hurt for everyone to try this, the GitLab server will just have a few dozen access tokens issued.
 
-1. Log in to https://summitXgitlab0.classroom.puppet.com as "cd4pe" with the password "puppetlabs" (Note: everyone uses gitlab0 regardless of student number)
+1. Log in to https://summitX-gitlab.classroom.puppet.com as "cd4pe" with the password "puppetlabs"
 1. Click the icon in the upper-right to expose the drop-down menu, and select "Settings"
 1. In the left-hand navigation, choose "Access Tokens"
 1. Name it something descriptive, like your name
@@ -20,7 +20,7 @@ Next we'll use the token to integrate CD4PE with source control.
 1. In the CD4PE GUI, click the "Integrate Source Control" button at the top of the window,
     1. (Or if you've dismissed that, click "Settings" then "Source Control")
 1. Click "GitLab",
-1. Set the "Host" to https://summitXgitlab0.classroom.puppet.com (Note: everyone uses gitlab0 regardless of student number),
+1. Set the "Host" to https://summitX-gitlab.classroom.puppet.com
 1. Paste the access token that you just generated from GitLab,
 1. Click "Add credentials",
 1. CD4PE will validate that they work,

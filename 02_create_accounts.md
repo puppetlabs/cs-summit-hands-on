@@ -6,7 +6,7 @@ We're going to do two things here.  First you're going to configure the "root" a
 
 ## Do this
 
-1. Browse to http://**summitXcd4peY.classroom.puppet.com**:8080/
+1. Browse to http://**summitX-cd4peY.classroom.puppet.com**:8080/
 1. Click the friendly button to "Get Started"
 1. You'll be asked to supply an email address and password for the root account
     1. There is no email validation, so it's safe to set something like `root@classroom.puppet.com`

@@ -13,8 +13,8 @@ First, we'll tell CD4PE where the gitlab repository is.
 1. In the ensuing page, click the text-only "Add Control Repo" button,
 1. Select GitLab, in the list,
 1. Choose the "Continuous Delivery" organization,
-1. Choose the control-repo-X named for your participant number,
-    1. (Note: there is a search box at the top of the list.)
+1. Choose the control-repo-X named for your participant number
+    1. (Note: the control repo **NOT** the module repo)
 1. Leave "branch" set to "master"
 1. Optional: give your repo a fancier name to be used in the GUI
 1. Click "Add"

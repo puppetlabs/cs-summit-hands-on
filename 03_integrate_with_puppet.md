@@ -11,7 +11,7 @@ In the interest of time, we've pre-created a "cd4pe" user with password "puppetl
 1. There's a big set of buttons up top, click "Integrate Puppet Enterprise,"
     1. (If you've dismissed that already, click "Settings" on the left, then "Puppet Enterprise".)
 1. Click to "Add Credentials"
-1. Supply a name, for instance "main-instance"
+1. Name the instance "main-instance"
 1. For the console address, simply supply "puppet.classroom.puppet.com"
 1. Leave the radio box set to "Basic Authorization"
 1. Supply the username we already created for you, "cd4pe"
